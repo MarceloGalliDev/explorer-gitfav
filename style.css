@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --ff-primary: 'Poppins', sans-serif;
+
+    --hue: 194;
+    --primary-color: hsl(var(--hue), 100%, 63%);
+}
+
+body * {
+    font-family: var(--ff-primary);
+}
+
+body {
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #2f2f33;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+#app {
+    max-width: 112rem;
+    margin: 0 auto;
+    padding: 11.5rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2.5rem 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.search input {
+    height: 4rem;
+    width: 35rem;
+    border-radius: .5rem;
+    background-color: #06181c;
+    border: none;
+    padding: 0 .8rem;
+    color: #fff;
+}
+
+.search button {
+    height: 4rem;
+    width: 14rem;
+    border-radius: .5rem;
+    background-color: #065E7C;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.search button:hover {
+    filter: brightness(1.1);
+    background-color: #fff;
+    color: #065E7C;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3);
+    margin-top: 8.7rem;
+}
+
+table * {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+table th {
+    font-weight: 400;
+    background-color: #092D38;
+    padding: 1.5rem;
+    text-align: right;
+}
+
+table th:first-child {
+    border-top-left-radius: 1rem;
+    text-align: left;
+}
+
+table th:last-child {
+    border-top-right-radius: 1rem;
+}
+
+table td {
+    padding: 1.5rem;
+}
+
+table tr:nth-child(odd) {
+    background: rgba(6, 22, 27, 0.5);
+}
+
+table tr:nth-child(even) {
+    background: #06181C;
+}
+
+td.user {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+td.user img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+td.repositories {
+    text-align: end;
+}
+
+td.followers {
+    text-align: end;
+}
+
+td.buttonRemove {
+    text-align: end;
+}
+
+td button.remove {
+    background: none;
+    border: none;
+    color: rgb(213, 26, 26);
+}
